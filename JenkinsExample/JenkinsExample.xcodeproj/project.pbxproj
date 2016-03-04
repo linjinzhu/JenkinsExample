@@ -12,8 +12,6 @@
 		4A6CC0ED1C893C6400A056B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6CC0EC1C893C6400A056B4 /* ViewController.m */; };
 		4A6CC0F01C893C6400A056B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CC0EE1C893C6400A056B4 /* Main.storyboard */; };
 		4A6CC0F21C893C6400A056B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CC0F11C893C6400A056B4 /* Assets.xcassets */; };
-		4A6CC0F51C893C6400A056B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CC0F31C893C6400A056B4 /* LaunchScreen.storyboard */; };
-		4A6CC0FD1C894C7C00A056B4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CC0FC1C894C7C00A056B4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +23,6 @@
 		4A6CC0EC1C893C6400A056B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4A6CC0EF1C893C6400A056B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6CC0F11C893C6400A056B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A6CC0F41C893C6400A056B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6CC0FC1C894C7C00A056B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -65,7 +62,6 @@
 				4A6CC0EC1C893C6400A056B4 /* ViewController.m */,
 				4A6CC0EE1C893C6400A056B4 /* Main.storyboard */,
 				4A6CC0F11C893C6400A056B4 /* Assets.xcassets */,
-				4A6CC0F31C893C6400A056B4 /* LaunchScreen.storyboard */,
 				4A6CC0E51C893C6400A056B4 /* Supporting Files */,
 			);
 			path = JenkinsExample;
@@ -137,8 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6CC0FD1C894C7C00A056B4 /* Info.plist in Resources */,
-				4A6CC0F51C893C6400A056B4 /* LaunchScreen.storyboard in Resources */,
 				4A6CC0F21C893C6400A056B4 /* Assets.xcassets in Resources */,
 				4A6CC0F01C893C6400A056B4 /* Main.storyboard in Resources */,
 			);
@@ -166,14 +160,6 @@
 				4A6CC0EF1C893C6400A056B4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4A6CC0F31C893C6400A056B4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A6CC0F41C893C6400A056B4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
