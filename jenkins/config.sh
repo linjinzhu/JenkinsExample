@@ -2,7 +2,7 @@
 
 # Standard app config
 export APP_NAME=JenkinsExample
-export DEVELOPER_NAME="iPhone Developer: JinZhu Lin (9R83ADTV4H)"
+export DEVELOPER_NAME="iPhone Distribution: JinZhu Lin (9JGQ936LPE)"
 export PROFILE_NAME=Baidu_Distribution
 export INFO_PLIST=JenkinsExample/Info.plist
 export BUNDLE_DISPLAY_NAME=JenkinsExample CI
