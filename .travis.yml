@@ -1,0 +1,17 @@
+language: objective-c
+before_script:
+- ./scripts/add-key.sh
+- ./scripts/update-bundle.sh
+script:
+xctool -workspace JenkinsExample.xcworkspace -scheme JenkinsExample -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
+after_success:
+- ./scripts/sign-and-upload.sh
+after_script:
+- ./scripts/remove-key.sh
+env:
+  global:
+  - APP_NAME="JenkinsExample"
+  - 'DEVELOPER_NAME="iPhone Developer: JinZhu Lin (9R83ADTV4H)"'
+  - PROFILE_NAME="Baidu_Distribution"
+  - secure: CTIxpBesN9t1sSCTUvgtnfSj9ee26RFPMN5mAqchXNSQpxAwyBPUI9C4I0pWQRB7YdH083/HSbehJg/oE6ekgsqf0kvrJblACtxXrJIJfLH4ZXeLrdPwhckhy3FISB4EtS5JCv3OBEEwEO/4Legl62vmftlZ8EFajpv2EMVVeBWJqd5fS7xqM1KRCXoUTU8+OZVaSJS8JKMBb8fr4HgyC/gDu+5MG4IwkHGZ+/LiXtO22YkY5ZaFA8u68FOEJlrfyf8MHuM5GwaQVNVf7AFr4/+wMx/aRRYj9k+fQgFN5/a0y6G+PAcWqBxWDm4yMSARsSsW38k9S8ftas8JNdwgsYg0KHtXE2H1CBtlp+vUKPMLcVcsRt8yA5JQIbRciaiCsi1JZp58FVYEDbiFBjwnG2BXotRDSo25EZMgHjh8i2tiDUpFNvMmAAYGh088y+48UBPLgC5QEa70gAZmS00YuIXuQrZT81SQ9HzLST+j5SytFV828GCBi222jZU4if38OTcaid3uydvQFQcFe0KgPFPNxsL30mzzNEb9eVnRLsFhyeIjzKXD3A7XO0x30Br7yxheWJDzSuu1nE/evUTj+30l+XVP/rud1jc3ih9qMz6Y/LIhmGI7yq2tTrd2cu7K54yOEeECwclVfme+F/UOVWXHWUqRRyYBWx9cODiT0pM=
+  - secure: M4AtCzHhQ8iymZKNQaNxpm+M41eim1ddBlryidkG58mO7oNsFWKPYyl0z+9DJmXqtzYWC6EqCzwzpZD2u6satJjPQ5FMA8HRwLxB0wXWdomKh9rP7W931TNDUKfY1HVayB2biMv5mFEyglEKeRxqndC19rQm+Ie04YC4eWrZXdXwLcAsDf45sPsebMxJRxfg0k3dbL2NixwkQWJ2FiZLpudRKElbLDSOSM2ScSHxaHF7FVSgDsmqJIMfTklTFDByb+nb6Dl37HqIhSyBlUHTEeoZ2unMIfTEpr2aRldk0RNrzOal2jHwgQ+EomMyA7rTU2sfoNP6xKpzazQUJOiqSPCXXDPi6hsmR3dWKEwlOwUpP5AyWHDnFVn9/fnud0SwyoyQllNMXPmpi15uQ4i73gkheowCs0Tg6Ch55KwoZ1nP0LADsNZ3TByDGSy+9RELu+6+ncBYpGvXjn4nsQEfqq3zfoGI7hI563pftBlHeH2kB0TYPTpkpVMEawBOwUQ2IsuN5C9iVyOivXkm+ZMaBHrImmr86IONm553FlzWJnb5QJisdG2MGs62HvhbZMpgeB/2X5TWS3CAH6maNzndwv3bHTA/9EQwnRI7qzUlI4kM5fXek73CsLEgx/A8pswJF/LqN8w/OlORtYtKaQo40aBDZhD/XH+/y/kGmyuKwTs=

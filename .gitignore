@@ -19,5 +19,11 @@ DerivedData
 *.hmap
 *.ipa
 
+# travis
+scripts/profile/Baidu_Distribution.mobileprovision
+scripts/certs/dist.cer
+scripts/certs/dist.p12
+scripts/config.sh
+
 # CocoaPods
 Pods
