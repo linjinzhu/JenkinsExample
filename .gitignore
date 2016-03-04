@@ -25,5 +25,8 @@ scripts/certs/dist.cer
 scripts/certs/dist.p12
 scripts/config.sh
 
+#jenkins
+jenkins/config.sh
+
 # CocoaPods
 Pods
